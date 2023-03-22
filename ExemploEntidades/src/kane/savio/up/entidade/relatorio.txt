@@ -1,0 +1,5 @@
+O produto selecionado é: Iphone
+Marca: Apple
+Valor: 5000.0O produto selecionado é: Iphone
+Marca: Apple
+Valor: 5000.0
