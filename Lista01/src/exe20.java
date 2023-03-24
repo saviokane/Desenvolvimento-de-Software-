@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-
+import java.text.DecimalFormat;
 public class exe20 {
 	
 	public static void main(String[] args) {
