@@ -8,6 +8,7 @@ public class exe09 {
 		int[] a = new int[5];
 		int[] b = new int[5];
 		int[] c = new int[5];
+		
 		System.out.println("Informe o elemento A: ");
 		for(int j = 0; j < 5; j++) {
 			System.out.println("Digite o contador "+ (j + 1)+":");
@@ -30,7 +31,7 @@ public class exe09 {
 		}
 		System.out.println("------------Elementos do vetor C.");
 		for (int i = 0; i < c.length; i++) {
-			System.out.println("O vetor "+ (i+1) +" é: "+ c[i]+ ".");
+			System.out.println("O vetor "+ (i + 1) +" é: "+ c[i] +".");
 		}
 	
 }
