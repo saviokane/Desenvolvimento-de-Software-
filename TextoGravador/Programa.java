@@ -6,7 +6,10 @@ import java.util.Formatter;
 
 public class Programa {
 	
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) {
+		
+	
+		
 		
 	//Leitura de arquivos	
 	
@@ -36,4 +39,5 @@ public class Programa {
 	}
 	leitor.close();
 	}
-}
+	}
+
