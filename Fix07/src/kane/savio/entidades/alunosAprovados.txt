@@ -1,0 +1,7 @@
+
+A quantidade de total de alunos é: 69.
+A quantidade de alunos aprovados é: 38.
+A quantidade de alunos aprovados é: 31.
+A menor nota é: 0.0.
+A maior nota é: 9.5.
+A média geral dos alunos é 5,56.

@@ -1,0 +1,8 @@
+
+O valor total do grupo B é:184
+O valor total do grupo A é:174
+O valor total do grupo C é:25
+O valor total do grupo D é:59
+O valor total do grupo E é:42
+O valor total do grupo F é:200
+A soma de todos os grupos registrado é: 684

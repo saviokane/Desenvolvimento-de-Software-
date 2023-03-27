@@ -1,7 +1,0 @@
-
-O valor do grupo A:174
-O valor do grupo B:184
-O valor do grupo C:25
-O valor do grupo D:59
-O valor do grupo E:42
-O valor do grupo F:200
