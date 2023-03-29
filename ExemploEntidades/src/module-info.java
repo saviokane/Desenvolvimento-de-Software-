@@ -2,7 +2,7 @@
  * 
  */
 /**
- * @author Aluno
+ * @author savio
  *
  */
 module ExemploEntidades {
