@@ -1,5 +1,5 @@
 package principal;
-import principal.pesssoa.pessoas;
+import principal.pesssoa.Pessoa;
 import principal.modelo.Bicicleta;
 public class Programa {
 
@@ -20,18 +20,62 @@ public class Programa {
 		System.out.println("Pedaladas Por Minutos: "+minhaBike.getpedaladasPorMinutos());
 		System.out.println("Marcha: "+minhaBike.getMarcha());
 		System.out.println();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 //		EXERCIICO
 		
-		pessoas Eu = new pessoas();
+		Pessoa Eu = new Pessoa();
+		Pessoa Voce = new Pessoa();
 		
 		Eu.setcpf("1532323251");
 		Eu.setnome("Juaum");
-		Eu.setpeso(50.20);
+		Eu.setpeso(50.2);
 		
+		Voce.setcpf("124398129");
+		Voce.setnome("Lusca");
+		Voce.setpeso(78.2);
+		
+		System.out.println("Eu:");
 		System.out.println("CPF: "+Eu.getCpf());
 		System.out.println("Nome: "+Eu.getNome());
 		System.out.println("Peso: "+Eu.getPeso());
+		
+		System.out.println();
+		
+		System.out.println("Você");
+		System.out.println("CPF: "+Voce.getCpf());
+		System.out.println("Nome: "+Voce.getNome());
+		System.out.println("Peso: "+Voce.getPeso());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

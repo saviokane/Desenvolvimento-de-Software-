@@ -1,6 +1,6 @@
 package principal.pesssoa;
 
-public class pessoas {
+public class Pessoa {
 
 	private String cpf;
 	private String nome;
@@ -32,7 +32,5 @@ public class pessoas {
 	public void setpeso(double peso) {
 		this.peso = peso;
 	}
-	
-	
 	
 }
