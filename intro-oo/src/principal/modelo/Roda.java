@@ -4,7 +4,6 @@ public class Roda {
 
 	
 	private double aro;
-	private double peso;
 	private String cor;
 	private String material;
 	
@@ -16,9 +15,6 @@ public class Roda {
 		return aro;
 	}
 	
-	public double getPeso() {
-		return peso;
-	}
 		
 	public String getMaterial() {
 		return material;
@@ -28,10 +24,6 @@ public class Roda {
 	
 	public void setCor(String cor) {
 		this.cor = cor;
-	}
-	
-	public void setPeso(double peso) {
-		this.peso = peso;
 	}
 	
 	public void setAro(double aro) {

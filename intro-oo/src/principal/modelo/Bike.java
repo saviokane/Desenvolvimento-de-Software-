@@ -2,12 +2,12 @@ package principal.modelo;
 import principal.modelo.*;
 public class Bike {
 
-
+	private String dono;
 	private Roda rodaDianteira;
 	private Roda rodaTrasseira;
 	private Quadro quadro;
 	
-	
+	// get Roda
 	public Roda getrodaDianteira() {
 		return rodaDianteira;
 	}
@@ -15,11 +15,16 @@ public class Bike {
 	public Roda getRodaTrasseira() {
 		return rodaTrasseira;
 	}
-	
+	// get Quadro
 	public Quadro getQuadro() {
 		return quadro;
 	}
 	
+	public String getDono() {
+		return dono;
+	}
+	
+	// setRoda
 	public void setrodaDianteira(Roda rodaDianteira) {
 		this.rodaDianteira = rodaDianteira;
 	}
@@ -27,9 +32,13 @@ public class Bike {
 	public void setrodaTrasseira(Roda rodaTrasseira) {
 		this.rodaTrasseira = rodaTrasseira;
 	}
-	
+	// setQuadro
 	public void setQuadro (Quadro quadro) {
 		this.quadro = quadro;
+	}
+	
+	public void setDono(String dono) {
+		this.dono = dono;
 	}
 	
 	
