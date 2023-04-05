@@ -1,10 +1,17 @@
-package principal.pesssoa;
+package principal.modelo;
 
 public class Pessoa {
 
 	private String cpf;
 	private String nome;
 	private double peso;
+	private int idade;
+	
+	// Getters
+	
+	public int getIdade() {
+		return idade;
+	}
 	
 	public String getCpf() {
 		return cpf;
@@ -20,6 +27,10 @@ public class Pessoa {
 	
 	
 	//Setters
+	
+	public void setidade(int idade) {
+		this.idade = idade;
+	}
 	
 	public void setcpf (String cpf) {
 		this.cpf = cpf;
