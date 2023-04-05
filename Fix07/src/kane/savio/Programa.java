@@ -1,5 +1,5 @@
-package kane.savio;
 
+package kane.savio;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
@@ -34,8 +34,9 @@ public static void main(String[] args) throws FileNotFoundException {
 		String linha = leitor.nextLine();
 		String[] campos = linha.split(";");
 		// Campos 0 recebe MATRICULA
-				// Campos 1 recebe NOME
-				// Campos 2 recebe NOTA
+		// Campos 1 recebe NOME
+		// Campos 2 recebe NOTA
+		
 		// Converte todas as ',' do texto em '.' para o Eclipse poder aceitar
 		campos[2] = campos[2].replace(",","."); 
 		
@@ -49,7 +50,6 @@ public static void main(String[] args) throws FileNotFoundException {
 			reprovados++;
 		}
 
-		
 		// Media geral
 		mediaGeral += Double.parseDouble(campos[2]);
 		
