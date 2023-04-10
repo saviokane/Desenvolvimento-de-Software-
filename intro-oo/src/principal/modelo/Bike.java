@@ -2,10 +2,15 @@ package principal.modelo;
 import principal.modelo.*;
 public class Bike {
 
-	private String dono;
+	
+	
+	private String modelo;
+	private int velocidade;
+	private int PedaladasPorMinutos;
+	private int marcha;
 	private Roda rodaDianteira;
 	private Roda rodaTrasseira;
-	private Quadro quadro;
+	private Quadro quadroDaBike;
 	
 	// get Roda
 	public Roda getrodaDianteira() {
@@ -16,15 +21,11 @@ public class Bike {
 		return rodaTrasseira;
 	}
 	// get Quadro
-	public Quadro getQuadro() {
-		return quadro;
+	public Quadro getQuadroDaBike() {
+		return quadroDaBike;
 	}
 	
-	public String getDono() {
-		return dono;
-	}
 	
-	// setRoda
 	public void setrodaDianteira(Roda rodaDianteira) {
 		this.rodaDianteira = rodaDianteira;
 	}
@@ -33,13 +34,54 @@ public class Bike {
 		this.rodaTrasseira = rodaTrasseira;
 	}
 	// setQuadro
-	public void setQuadro (Quadro quadro) {
-		this.quadro = quadro;
+	public void setQuadroDaBike (Quadro quadroDaBike) {
+		this.quadroDaBike = quadroDaBike;
 	}
 	
-	public void setDono(String dono) {
-		this.dono = dono;
+	public String getModelo() {
+		return modelo;
 	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public int getVelocidade() {
+		return velocidade;
+	}
+
+	public void setVelocidade(int velocidade) {
+		this.velocidade = velocidade;
+	}
+
+	public int getPedaladasPorMinutos() {
+		return PedaladasPorMinutos;
+	}
+
+	public void setPedaladasPorMinutos(int pedaladasPorMinutos) {
+		PedaladasPorMinutos = pedaladasPorMinutos;
+	}
+
+	public int getMarcha() {
+		return marcha;
+	}
+
+	public void setMarcha(int marcha) {
+		this.marcha = marcha;
+	}
+
+	public Roda getRodaDianteira() {
+		return rodaDianteira;
+	}
+
+	public void setRodaDianteira(Roda rodaDianteira) {
+		this.rodaDianteira = rodaDianteira;
+	}
+
+	public void setRodaTrasseira(Roda rodaTrasseira) {
+		this.rodaTrasseira = rodaTrasseira;
+	}
+ 
 	
 	
 	
