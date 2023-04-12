@@ -3,11 +3,11 @@ package principal.modelo;
 public class Roda {
 
 	
-	private double aro;
+	private String aro;
 	private String cor;
 	private String material;
 	
-	public Roda(double aro, String cor, String material) {
+	public Roda(String aro, String cor, String material) {
 		
 		this.aro = aro;
 		this.cor = cor;
@@ -18,7 +18,7 @@ public class Roda {
 	public String getCor() {
 		return cor;
 	}
-	public double getAro() {
+	public String getAro() {
 		return aro;
 	}
 	
@@ -33,7 +33,7 @@ public class Roda {
 		this.cor = cor;
 	}
 	
-	public void setAro(double aro) {
+	public void setAro(String aro) {
 		this.aro = aro;
 	}
 	

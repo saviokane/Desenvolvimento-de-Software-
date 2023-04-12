@@ -8,17 +8,20 @@ public class Bike {
 	private int velocidade;
 	private int PedaladasPorMinutos;
 	private int marcha;
+	private Quadro quadroDaBike;
 	private Roda rodaDianteira;
 	private Roda rodaTrasseira;
-	private Quadro quadroDaBike;
+
 	
 	
 	// construtores
-	private Bike() {}
+	public Bike() {
+		
+	}
 	
 	public Bike(String modelo, int velocidade,int PedaladasPorMinutos,
 				int marcha,Quadro quadroDaBike, Roda rodaDianteira, Roda rodaTrasseira) {
-		this.modelo = modelo;
+		this.modelo = modelo; 
 		this.velocidade = velocidade;
 		this.PedaladasPorMinutos = PedaladasPorMinutos;
 		this.marcha = marcha;
