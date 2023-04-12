@@ -2,7 +2,7 @@ package principal.modelo;
 
 public class Quadro {
 
-	private String tamanho;
+	
 	public String getTamanho() {
 		return tamanho;
 	}
@@ -11,6 +11,19 @@ public class Quadro {
 	}
 	private String cor;
 	private String material;
+	private String tamanho;
+	
+	public Quadro(String cor, String material, String tamanho) {
+		this.cor = cor;
+		this.material = material;
+		this.tamanho = tamanho;
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	

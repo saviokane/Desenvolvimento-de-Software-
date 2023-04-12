@@ -5,13 +5,16 @@ import principal.modelo.*;
 public class Programa2 {
 public static void main(String[] args) {
 	
-
-	Bike minhaBike = new Bike();
-	minhaBike.setMarcha(3);
-	minhaBike.setModelo("Kiljoy");
-	minhaBike.setPedaladasPorMinutos(23);
-	
 	Quadro quadroDaBike = new Quadro();
+	Roda rodaDianteira = new Roda();
+	Roda rodaTrasseira = new Roda();
+	
+	Bike minhaBike = new Bike("neon",2 ,4 ,2 ,quadroDaBike ,rodaDianteira ,rodaTrasseira);
+//	minhaBike.setModelo("Kiljoy");
+//	minhaBike.setMarcha(3);
+//	minhaBike.setPedaladasPorMinutos(23);
+	
+	
 	quadroDaBike.setCor("Vermelha");
 	quadroDaBike.setMaterial("Aluminio");
 	quadroDaBike.setTamanho("Pequeno");
@@ -19,19 +22,18 @@ public static void main(String[] args) {
 	minhaBike.setQuadroDaBike(quadroDaBike);
 	
 	
-	Roda rodaDianteiraDaBike = new Roda();
-	rodaDianteiraDaBike.setCor("Vermelho");
-	rodaDianteiraDaBike.setAro(21);
-	rodaDianteiraDaBike.setMaterial("Aço");
-	
-	minhaBike.setrodaDianteira(rodaDianteiraDaBike);
-	
-	Roda rodaTrasseiraDaBike = new Roda();
-	rodaTrasseiraDaBike.setCor("Vermelho");
-	rodaTrasseiraDaBike.setAro(21);
-	rodaTrasseiraDaBike.setMaterial("Aço");
-	
-	minhaBike.setrodaTrasseira(rodaTrasseiraDaBike);
+//	rodaDianteiraDaBike.setCor("Vermelho");
+//	rodaDianteiraDaBike.setAro(21);
+////	rodaDianteiraDaBike.setMaterial("Aço");
+//	
+//	minhaBike.setrodaDianteira(rodaDianteiraDaBike);
+//	
+//	
+////	rodaTrasseiraDaBike.setCor("Vermelho");
+////	rodaTrasseiraDaBike.setAro(21);
+////	rodaTrasseiraDaBike.setMaterial("Aço");
+//	
+//	minhaBike.setrodaTrasseira(rodaTrasseiraDaBike);
 	
 	System.out.println("Especificação da roda:");
 	System.out.println("Modelo: "+minhaBike.getModelo());
@@ -49,9 +51,9 @@ public static void main(String[] args) {
 	System.out.println("Tamanho: "+quadroDaBike.getTamanho());
 	System.out.println();
 	System.out.println("Especificações da roda:");
-	System.out.println("Aro: "+rodaDianteiraDaBike.getAro());
-	System.out.println("Cor: "+rodaDianteiraDaBike.getCor());
-	System.out.println("Material: "+rodaDianteiraDaBike.getMaterial());
+	System.out.println("Aro: "+rodaDianteira.getAro());
+	System.out.println("Cor: "+rodaDianteira.getCor());
+	System.out.println("Material: "+rodaDianteira.getMaterial());
 	
 	
 	

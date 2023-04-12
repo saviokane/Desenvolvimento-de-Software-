@@ -7,6 +7,13 @@ public class Roda {
 	private String cor;
 	private String material;
 	
+	public Roda(double aro, String cor, String material) {
+		
+		this.aro = aro;
+		this.cor = cor;
+		this.material = material;
+	}
+	
 	// GETTER
 	public String getCor() {
 		return cor;

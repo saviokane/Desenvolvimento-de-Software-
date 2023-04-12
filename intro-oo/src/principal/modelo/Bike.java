@@ -12,6 +12,22 @@ public class Bike {
 	private Roda rodaTrasseira;
 	private Quadro quadroDaBike;
 	
+	
+	// construtores
+	private Bike() {}
+	
+	public Bike(String modelo, int velocidade,int PedaladasPorMinutos,
+				int marcha,Quadro quadroDaBike, Roda rodaDianteira, Roda rodaTrasseira) {
+		this.modelo = modelo;
+		this.velocidade = velocidade;
+		this.PedaladasPorMinutos = PedaladasPorMinutos;
+		this.marcha = marcha;
+		this.quadroDaBike = quadroDaBike;
+		this.rodaDianteira = rodaDianteira;
+		this.rodaTrasseira = rodaTrasseira;
+		
+	}
+	
 	// get Roda
 	public Roda getrodaDianteira() {
 		return rodaDianteira;
