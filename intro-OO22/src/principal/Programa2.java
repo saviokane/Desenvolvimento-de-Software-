@@ -3,26 +3,32 @@ import principal.modelo.*;
 
 public class Programa2 {
 	
-	
-	
-	
-	
-//	public static void main(String[] args) {
-//		Ingrediente molho = new Ingrediente ("Molho","Tomate");
-//		Ingrediente queijo = new Ingrediente ("Cheddar", "Parmesão");
-//		
-//		Pizza pizzaDeQueijo = new Pizza("Cheddar");
-//		pizzaDeQueijo.adicionar(queijo);
-//		pizzaDeQueijo.adicionar(molho);
-//
-//		
-//		// Imprimir ingredientes da pizza
-//		for(int i = 0; i< pizzaDeQueijo.getIngrediantes().size(); i++) {
-//			Ingrediente ingredienteDaLista = pizzaDeQueijo.getIngrediantes().get(i); // GET(I) == ingrediente[i] 
-//			System.out.println("Nome ingrediente: "+ingredienteDaLista.getNome());
+	public static void main(String[] args) {
+		
+		// falta adicionar agora adicionar relação de herança de bikes de tipos diferentes recebem o atributo padrão
+	}
+		Ingrediente molho = new Ingrediente ("Molho","Tomate");
+		Ingrediente queijo = new Ingrediente ("Cheddar", "Parmesão");
+		
+		Pizza pizzaDeQueijo = new Pizza("Cheddar");
+		pizzaDeQueijo.adicionar(queijo);
+		pizzaDeQueijo.adicionar(molho);
+
+		
+	//	   System.out.println("Pizza: "+ pizzaDeQueijo.getNome());
+		// Imprimir ingredientes da pizza
+		// For básico
+//		for(int i = 0; i< pizzaDeQueijo.getIngrediente().size(); i++) {
+//			Ingrediente ingrediente = pizzaDeQueijo.getIngrediente().get(i); // GET(I) == ingrediente[i] 
+//			System.out.println("Nome ingrediente: "+ingrediente.getNome());
+//			System.out.println("Descrição ingrediente: "+ingrediente.getDescricao());
 //		}
-//		
-//		
+		
+		// For avançado
+//		for(Ingrediente ingrediente : pizzaDeQueijo.getIngrediente()) {
+//			System.out.println("Nome ingrediente: "+ingrediente.getNome());
+//			System.out.println("Descrição ingrediente: "+ingrediente.getDescricao());
+//		}
 //	}
 	
 	
