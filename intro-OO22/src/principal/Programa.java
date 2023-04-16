@@ -1,121 +1,147 @@
 package principal;
-import principal.modelo.Bike;
-import principal.modelo.Pessoa;
+import principal.modelo.*;
+
 public class Programa {
+	
+	
+		public static void main(String[] args) {
+			
+			
+			BikeDeTrilha bikeTrilha = new BikeDeTrilha("Mountain", 0, 1, 0,
+									  new Quadro ("Rosa","Ferro","Giga"),
+									  new Roda ("12","Rosa","Aluminio"),
+									  new Roda ("12","Rosa","Aluminio"));
+			
+			
+			System.out.println("========== Informações sobre a bike solicitada ==========");
+			System.out.println();
+			System.out.println("Modelo: "+bikeTrilha.getModelo());
+			System.out.println("Velocidade: "+bikeTrilha.getVelocidade());
+			System.out.println("Pedaladas: "+bikeTrilha.getPedaladasPorMinutos());
+			System.out.println("Marcha: "+bikeTrilha.getMarcha());
+			System.out.println();
+			System.out.println("Cor do Quadro: "+bikeTrilha.getQuadroDaBike().getCor());
+			System.out.println("Material do Quadro: "+ bikeTrilha.getQuadroDaBike().getMaterial());
+			System.out.println("Tamanho do Quadro: "+bikeTrilha.getQuadroDaBike().getTamanho());
+			System.out.println();
+			System.out.println("Cor da roda Dianteira: "+bikeTrilha.getRodaDianteira().getCor());
+			System.out.println("Aro da roda Dianteira: "+bikeTrilha.getRodaDianteira().getAro());
+			System.out.println("Material da roda Dianteira: "+bikeTrilha.getRodaDianteira().getMaterial());
+			System.out.println();
+			System.out.println("Cor da roda Trasseira: "+bikeTrilha.getRodaTrasseira().getCor());
+			System.out.println("Aro da roda Trasseira: "+bikeTrilha.getRodaTrasseira().getAro());
+			System.out.println("Material da roda Trasseira: "+bikeTrilha.getRodaTrasseira().getMaterial());
+			
+			
+			
+				
+		}
+	
+	// =================================================================================================================
+	
+//	public static void main(String[] args) {
+//		
+//		
+//	
+//		Ingrediente molho = new Ingrediente ("Molho","Tomate");
+//		Ingrediente queijo = new Ingrediente ("Queijo", "Cheddar");
+//		Ingrediente calabresa = new Ingrediente ("Calabresa","Laticinio");
+//		Ingrediente oregano = new Ingrediente("Oregano","Planta");
+//		Ingrediente trigo = new Ingrediente("Trigo","Farinha");
+//		Ingrediente oleo = new Ingrediente("Oléo","1 Xicará");
+//		Ingrediente sal = new Ingrediente("Sal","2 Colheres");
+//		
+//		
+//		Pizza pizzaDeQueijo = new Pizza("Queijo Cheddar c/ Calabresa");
+//		
+//		
+//		pizzaDeQueijo.adicionar(queijo);
+//		pizzaDeQueijo.adicionar(molho);
+//		pizzaDeQueijo.adicionar(calabresa);
+//		pizzaDeQueijo.adicionar(oregano);
+//		pizzaDeQueijo.adicionar(trigo);
+//		pizzaDeQueijo.adicionar(oleo);
+//		pizzaDeQueijo.adicionar(sal);
+//		
+//		   System.out.println("======== Pizza de "+ pizzaDeQueijo.getNome()+" ======== ");
+////		 Imprimir ingredientes da pizza
+////		 For básico
+////		for(int i = 0; i< pizzaDeQueijo.getIngrediente().size(); i++) {
+////			Ingrediente ingrediente = pizzaDeQueijo.getIngrediente().get(i); // GET(I) == ingrediente[i] 
+////			System.out.println("Nome ingrediente: "+ingrediente.getNome());
+////			System.out.println("Descrição ingrediente: "+ingrediente.getDescricao());
+////		}
+//		
+//		// For avançado
+//		for(Ingrediente ingrediente : pizzaDeQueijo.getIngredientes()) {
+//			System.out.println("Ingrediente: "+ingrediente.getNome());
+//			System.out.println("Descrição: "+ingrediente.getDescricao());
+//			System.out.println();
+//		}
+//	}
+	
+	
+	
+	
+	
+	// =================================================================================================================
+	
+	
+	
+	
+	
 
-	public static void main(String[] args) {
-		Bike minhaBike = new Bike();
-		
-		minhaBike.setModelo("Caloi");
-		minhaBike.SetVelocidade(0); // neste momento
-		minhaBike.setMarcha(0);
-		minhaBike.setpedaladasPorMinutos(0);
-		
-		
-		
-		// daqui a 20m
-		minhaBike.SetVelocidade(20);
-		
-		// Imprime os dados da bike
-		System.out.println("Modelo: "+minhaBike.getModelo());
-		System.out.println("Velocidade: "+minhaBike.getVelocidade());
-		System.out.println("Pedaladas Por Minutos: "+minhaBike.getpedaladasPorMinutos());
-		System.out.println("Marcha: "+minhaBike.getMarcha());
-		System.out.println();
-
-//		EXERCIICO
-		
-		Pessoa eu = new Pessoa();
-		Pessoa voce = new Pessoa();
-		
-		Pessoa pessoaPedro = new Pessoa();
-		Pessoa pessoaAna = new Pessoa();
-		Pessoa pessoaCarlos = new Pessoa();
-//		Pessoa tu = new Pessoa();
-//		Pessoa ele = new Pessoa();
-		
-		
-		eu.setcpf("423432423");
-		eu.setnome("Luska");
-		eu.setpeso(50.2);
-		
-		voce.setcpf("124398129");
-		voce.setnome("Juaum");
-		voce.setpeso(78.2);
-		
-		pessoaPedro.setnome("Pedro");
-		pessoaPedro.setcpf("5253654521");
-		pessoaPedro.setidade(18);
-		
-		pessoaAna.setnome("Ana");
-		pessoaAna.setcpf("165846841");
-		pessoaAna.setidade(21);
-		
-		pessoaCarlos.setnome("Carlos");
-		pessoaCarlos.setcpf("879513864");
-		pessoaCarlos.setidade(23);
-		
-		
-		
-		System.out.println("Eu:");
-		System.out.println("CPF: "+eu.getCpf());
-		System.out.println("Nome: "+eu.getNome());
-		System.out.println("Peso: "+eu.getPeso());
-		
-		System.out.println();
-		
-		System.out.println("Você");
-		System.out.println("CPF: "+voce.getCpf());
-		System.out.println("Nome: "+voce.getNome());
-		System.out.println("Peso: "+voce.getPeso());
-		
-		System.out.println();
-		
-		System.out.println("Você");
-		System.out.println("CPF: "+pessoaAna.getCpf());
-		System.out.println("Nome: "+pessoaAna.getNome());
-		System.out.println("Peso: "+pessoaAna.getIdade());
-		
-		System.out.println();
-		
-		System.out.println("Ana:");
-		System.out.println("CPF: "+pessoaAna.getCpf());
-		System.out.println("Nome: "+pessoaAna.getNome());
-		System.out.println("Peso: "+pessoaAna.getIdade());
-		
-		System.out.println();
-		
-		System.out.println("Carlos: ");
-		System.out.println("CPF: "+pessoaCarlos.getCpf());
-		System.out.println("Nome: "+pessoaCarlos.getNome());
-		System.out.println("Peso: "+pessoaCarlos.getIdade());
-		
-		System.out.println();
-		
-		System.out.println("Pedro: ");
-		System.out.println("CPF: "+pessoaPedro.getCpf());
-		System.out.println("Nome: "+pessoaPedro.getNome());
-		System.out.println("Peso: "+pessoaPedro.getIdade());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}	
+//public static void main(String[] args) {
+//	
+//	Quadro quadroDaBike = new Quadro();
+//	Roda rodaDianteira = new Roda();
+//	Roda rodaTrasseira = new Roda();
+//	
+//	Bike minhaBike = new Bike("neon",2 ,4 ,2 ,quadroDaBike ,rodaDianteira ,rodaTrasseira);
+////	minhaBike.setModelo("Kiljoy");
+////	minhaBike.setMarcha(3);
+////	minhaBike.setPedaladasPorMinutos(23);
+//	
+//	
+//	quadroDaBike.setCor("Vermelha");
+//	quadroDaBike.setMaterial("Aluminio");
+//	quadroDaBike.setTamanho("Pequeno");
+//	
+//	minhaBike.setQuadroDaBike(quadroDaBike);
+//	
+//	
+////	rodaDianteiraDaBike.setCor("Vermelho");
+////	rodaDianteiraDaBike.setAro(21);
+//////	rodaDianteiraDaBike.setMaterial("Aço");
+////	
+////	minhaBike.setrodaDianteira(rodaDianteiraDaBike);
+////	
+////	
+//////	rodaTrasseiraDaBike.setCor("Vermelho");
+//////	rodaTrasseiraDaBike.setAro(21);
+//////	rodaTrasseiraDaBike.setMaterial("Aço");
+////	
+////	minhaBike.setrodaTrasseira(rodaTrasseiraDaBike);
+//	
+//	System.out.println("Especificação da roda:");
+//	System.out.println("Modelo: "+minhaBike.getModelo());
+//	System.out.println("Pedaladas por min.: "+minhaBike.getPedaladasPorMinutos());
+//	System.out.println("Quadro: "+minhaBike.getQuadroDaBike());
+//	System.out.println("Roda Dianteira: "+minhaBike.getrodaDianteira());
+//	System.out.println("Cor da roda: "+minhaBike.getrodaDianteira().getCor());
+//	System.out.println("Aro da roda: "+minhaBike.getrodaDianteira().getAro());
+//	System.out.println("Material: "+minhaBike.getrodaDianteira().getMaterial());
+//	System.out.println("Marcha: "+minhaBike.getMarcha());
+//	
+//	System.out.println("Especificações do quadro: ");
+//	System.out.println("Material em: "+quadroDaBike.getMaterial());
+//	System.out.println("Cor: "+quadroDaBike.getCor());
+//	System.out.println("Tamanho: "+quadroDaBike.getTamanho());
+//	System.out.println();
+//	System.out.println("Especificações da roda:");
+//	System.out.println("Aro: "+rodaDianteira.getAro());
+//	System.out.println("Cor: "+rodaDianteira.getCor());
+//	System.out.println("Material: "+rodaDianteira.getMaterial());
+//		
+//}
 }

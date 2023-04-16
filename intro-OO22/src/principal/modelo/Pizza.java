@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pizza {
+	
 	private String nome;
 	private List<Ingrediente> ingredientes = new ArrayList<Ingrediente>();;
 	
-	public Pizza() {}
+	public Pizza() {
+		
+		
+	}
 	
 	public Pizza(String nome) {
 		this.nome = nome;
@@ -20,7 +24,16 @@ public class Pizza {
 	public void remover(Ingrediente ingrediente) {
 		this.ingredientes.remove(ingrediente);
 	}
+	
+	public List<Ingrediente> getIngredientes() {
+		return ingredientes;
+	}
 
+	
+	public void setIngredientes(List<Ingrediente> ingredientes) {
+		this.ingredientes = ingredientes;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
@@ -28,18 +41,4 @@ public class Pizza {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public List<Ingrediente> getIngredientes() {
-		return ingredientes;
-	}
-
-	public void setIngredientes(List<Ingrediente> ingredientes) {
-		this.ingredientes = ingredientes;
-	}
-	
-	public List<Ingrediente> getIngrediente(){
-		return ingredientes;
-	}
-	
-	
 }

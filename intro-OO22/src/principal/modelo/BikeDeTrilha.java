@@ -1,5 +1,11 @@
 package principal.modelo;
 
 public class BikeDeTrilha extends Bike {
-// Tentar fazer a as relações 
+	public BikeDeTrilha(String modelo, int velocidade,
+			int pedaladas, int marcha, Quadro quadro, Roda rodaDianteira,
+			Roda rodaTrasseira) {
+		
+		super(modelo, velocidade, pedaladas, marcha, quadro,
+				rodaDianteira, rodaTrasseira);
+	}
 }
