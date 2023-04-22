@@ -35,7 +35,7 @@ public class Produto {
 		return mouses;
 	}
 	
-	// =============
+	// =================================================
 	
 	public void adicionar(Headset headsets) {
 		this.headsets.add(headsets);
@@ -48,8 +48,6 @@ public class Produto {
 	public List<Headset> getHeadsets(){
 		return headsets;
 	}
-	
-	
 	
 	 public void setHeadset(List<Headset> headsets) {
 		 this.headsets = headsets;

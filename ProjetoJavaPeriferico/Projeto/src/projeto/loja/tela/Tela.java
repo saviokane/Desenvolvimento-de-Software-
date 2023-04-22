@@ -41,6 +41,23 @@ public static void main(String[] args) {
 		System.out.println("Valor: "+HeadsetRazer.getValor());
 		
 	}
+
+	Cliente clientes = new Cliente("Junin","0213984192",
+			"(79)9999-9999","eduzinhoamassa@gmail.com", 
+			new Pedido (69,TecladoRazer));
+	
+	
+	
+	System.out.println("Cliente: "+clientes.getNome()+
+			"\nID: "+clientes.getFazPedido().getId()+
+			"\n===Informações do produto === \n"+clientes.getFazPedido()
+			.getTeclados().getNome()+
+			"\nValor: "+clientes.getFazPedido().getTeclados().getValor());
+	
+	
+	
+	
+	
 		
 		
 	
