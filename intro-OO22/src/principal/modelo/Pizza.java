@@ -6,11 +6,9 @@ import java.util.List;
 public class Pizza {
 	
 	private String nome;
-	private List<Ingrediente> ingredientes = new ArrayList<Ingrediente>();;
+	private List<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
 	
 	public Pizza() {
-		
-		
 	}
 	
 	public Pizza(String nome) {
