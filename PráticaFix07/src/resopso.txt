@@ -1,3 +1,0 @@
-
-A quantidade de alunos no total é:69
-A quantidade e alunos aprovado é: 38 e reprovados é: 31.
