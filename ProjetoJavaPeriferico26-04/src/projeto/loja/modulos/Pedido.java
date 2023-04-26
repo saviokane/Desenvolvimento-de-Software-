@@ -2,12 +2,13 @@ package projeto.loja.modulos;
 
 import java.util.List;
 
-public class Pedido extends Produto{
+public class Pedido {
 	
 	private int id;
 	private Produto produto;
 	
 	public Pedido(int id, Produto produto) {
+			super();
 			this.id = id;
 			this.produto = produto;
 	
