@@ -16,7 +16,6 @@ public class TelaPrincipal{
 		System.out.println("[4] "+Mensagem.MSG_SAIR );
 		
 		opcao = leitor.nextInt();
-		
 		switch(opcao) {
 		case 1:{
 			TelaDePedidos.mostrar();
