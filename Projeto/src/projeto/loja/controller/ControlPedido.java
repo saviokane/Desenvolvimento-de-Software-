@@ -25,10 +25,11 @@ public class ControlPedido {
 	
 	public static void selecionar() {
 		Scanner leitor = new Scanner (System.in);
-	ControlProduto produto = new ControlProduto();
-	ControlCliente cliente = new ControlCliente();
-	ControlProduto valor = new ControlProduto();
-	Pedido pedido = new Pedido();
+			ControlProduto produto = new ControlProduto();
+			ControlCliente cliente = new ControlCliente();
+			ControlProduto valor = new ControlProduto();
+			Pedido pedido = new Pedido();
+//			double valorTotal = 0;
 
 	if(produto.teclado != null) {
 	pedido.setProduto(produto.getTeclado());
@@ -47,18 +48,26 @@ public class ControlPedido {
 
 	pedido.setPessoa(cliente.cliente);
 	pedido.setValor(produto.valor);
+	pedido.setValorTotal(produto.valorTotal);
 	
 	compra.adicionar(pedido);
 	
 	for (Pedido pedidos : compra.getPedido()) {
 		i++;
 		System.out.println(
+				
 				"\nID: ["+i+"]"+
 				" Pedido realizado com sucesso!!!"+
 				"\nCliente: "+	pedidos.getPessoa()+
-				" \nProduto: " + pedidos.getProduto()+
-				"\nValor: R$"+ pedidos.getValor()+"\n");
+				"\nProduto: " + pedidos.getProduto()+
+				"\nValor: R$"+ pedidos.getValor()+"\n"+
+				"Valor Total: "+ pedido.getValorTotal());
+				
+//		valorTotal = valorTotal + pedidos.getValor();
+		
 	}
+	
+	
 	i = 0;
 			
 	

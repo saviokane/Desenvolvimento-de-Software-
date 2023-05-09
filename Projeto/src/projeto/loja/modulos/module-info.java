@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author savio
- *
- */
-module loja {
-}
