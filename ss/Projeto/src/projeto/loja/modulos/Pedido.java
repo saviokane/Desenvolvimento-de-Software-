@@ -7,7 +7,16 @@ public class Pedido {
 	private String produto;
 	private String  pessoa;
 	private double valor;
+	private double valorTotal;
 	
+	public double getValorTotal() {
+		return valorTotal;
+	}
+
+	public void setValorTotal(double valorTotal) {
+		this.valorTotal = valorTotal;
+	}
+
 	public void setValor(double valor) {
 		this.valor = valor;
 	}

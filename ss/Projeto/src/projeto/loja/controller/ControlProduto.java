@@ -17,6 +17,8 @@ public class ControlProduto {
 	static String headset;
 	static String mouse;
 	static int i;
+	static double valorTotal;
+	static int id = 0;
 	
 	public static void cadastrar() {
 		Scanner leitor = new Scanner (System.in);
@@ -425,24 +427,29 @@ public class ControlProduto {
 			    if (i > 0 && i <= estoque.getTeclados().size()) {
 			        teclado = estoque.getTeclados().get(i-1).getNome();
 			        valor = estoque.getTeclados().get(i-1).getValor();
-
+			        if(id > 1) {
+			        	valorTotal = valorTotal + valor;
+			        }else {
+			        	valorTotal=valor;
+			        }
 				       System.out.println(Mensagem.MSG_PRODUTO_SELECIONADO + teclado);
 				       
 			    }
-			    System.out.println(Mensagem.PRODUTO_DESEJA_ADD);
-				System.out.println(Mensagem.PRODUTO_CONTINUAR);
-				int opcao = leitor.nextInt();
-				
-				
-				switch(opcao) {
-				case 1 :
-					ControlProduto.selecionar();
-					break;
-				case 2:
+//			    System.out.println(Mensagem.PRODUTO_DESEJA_ADD);
+//				System.out.println(Mensagem.PRODUTO_CONTINUAR);
+//				int opcao = leitor.nextInt();
+//				
+//				
+//				switch(opcao) {
+//				case 1 :
+//					ControlProduto.selecionar();
+//					break;
+//				case 2:
 					i=0;
+					id++;
 					TelaDePedidos.mostrar();
-					break;
-				}
+//					break;
+//				}
 				     
 			    leitor.close();
 		
