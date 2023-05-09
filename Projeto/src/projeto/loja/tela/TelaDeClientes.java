@@ -17,7 +17,7 @@ public class TelaDeClientes {
 		System.out.println("[1] "+Mensagem.MSG_LISTAR);
 		System.out.println("[2] "+Mensagem.MSG_CADASTRAR);
 		System.out.println("[3] "+Mensagem.MSG_EXCLUIR);
-		System.out.println("[4] "+Mensagem.MSG_INDISPONIVEL);
+		System.out.println("[4] "+Mensagem.MSG_ALTERACAO);
 		System.out.println("[5] "+Mensagem.MSG_VOLTAR);
 		opcao = leitor.nextInt();
 		switch(opcao) {
@@ -31,9 +31,7 @@ public class TelaDeClientes {
 			ControlCliente.excluir();
 			break;
 		case 4:
-			
 			ControlCliente.atualizar();
-			
 			break;
 		case 5:
 			TelaPrincipal.mostrar();

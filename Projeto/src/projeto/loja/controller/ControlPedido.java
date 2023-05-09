@@ -57,12 +57,10 @@ public class ControlPedido {
 				" Pedido realizado com sucesso!!!"+
 				"\nCliente: "+	pedidos.getPessoa()+
 				" \nProduto: " + pedidos.getProduto()+
-				"\nValor: R$"+ pedidos.getValor()+"\n"+
-				" \nProduto: " + pedidos.getProduto()+
-				"\nValor: R$"+ pedidos.getValor());
+				"\nValor: R$"+ pedidos.getValor()+"\n");
 	}
 	i = 0;
-	
+			
 	
 		TelaDePedidos.mostrar();
 	}

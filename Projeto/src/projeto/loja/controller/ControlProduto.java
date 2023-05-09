@@ -18,9 +18,6 @@ public class ControlProduto {
 	static String mouse;
 	static int i;
 	
-
-
-
 	public static void cadastrar() {
 		Scanner leitor = new Scanner (System.in);
 		int opcao;
@@ -110,52 +107,49 @@ public class ControlProduto {
 	
 	public static void listar() {
 		
-		if(estoque.getTeclados().size()==0 && estoque.getHeadsets().size()==0 && estoque.getMouse().size()==0) {
+		if(estoque.getTeclados().size() == 0 && estoque.getHeadsets().size() == 0 && estoque.getMouse().size()==0) {
 			
 			System.out.println(Mensagem.ADD_PRODUTO);
 			
 		}else{
-		if(estoque.getTeclados().size()==0) {
+		if(estoque.getTeclados().size() == 0) {
 			System.out.println();
 		}else {	
 		System.out.println(Mensagem.TELA_LISTA_PRODUTOS);
 		System.out.println(Mensagem.LISTA_TECLADOS);
 		for(Teclado teclado : estoque.getTeclados()) {
-			System.out.println("\nMarca: "+teclado.getNome()+
-					"\nValor: "+ teclado.getValor()+"\n");
+			System.out.println(Mensagem.MSG_MARCA+teclado.getNome()+
+							   Mensagem.MSG_VALOR+ teclado.getValor()+"\n");
 			
 			System.out.flush();
 		}
 }
-		if(estoque.getHeadsets().size()==0) {
+		if(estoque.getHeadsets().size() == 0) {
 		System.out.println();	
 		}else {
 			
 			System.out.println(Mensagem.LISTA_HEADSETS);
 			for(Headset headset : estoque.getHeadsets()) {
-				System.out.println("\nMarca: "+headset.getNome()+
-						"\nValor: "+ headset.getValor()+"\n");
+				System.out.println(Mensagem.MSG_MARCA+headset.getNome()+
+								   Mensagem.MSG_VALOR+ headset.getValor()+"\n");
 				
 				System.out.flush();
 			
 			}
-			
 		}
-	if(estoque.getMouse().size()==0) {
+	if(estoque.getMouse().size() == 0) {
 			System.out.println();
 	}
 	else {
 			System.out.println(Mensagem.LISTA_MOUSES);
 			for(Mouse mouse : estoque.getMouse()) {
-				System.out.println("\nMarca: "+mouse.getNome()+
-						"\nValor: "+ mouse.getValor()+"\n");
+				System.out.println(Mensagem.MSG_MARCA+mouse.getNome()+
+								   Mensagem.MSG_VALOR+ mouse.getValor()+"\n");
 				
 				System.out.flush();
-			
 		}
 	}	
 }
-		
 	TelaDeProdutos.mostrar();
 }
 	
@@ -165,8 +159,8 @@ public class ControlProduto {
 		  
 		  System.out.println(Mensagem.MSG_ESCOLHA);
 		  System.out.println(Mensagem.MSG_TECLADO+
-				  "\n"+ Mensagem.MSG_HEADSET+ "\n"
-				  + Mensagem.MSG_MOUSE);
+				  	   "\n"+ Mensagem.MSG_HEADSET+ 
+				  	   "\n"+ Mensagem.MSG_MOUSE);
 		  int escolha = leitor.nextInt();  
 		  leitor.nextLine();  
 		  
@@ -181,8 +175,8 @@ public class ControlProduto {
 		    for (Teclado teclado : estoque.getTeclados()) {
 		        i++;
 		        
-		        System.out.println(i+"-Marca: " + teclado.getNome() +
-		                            "\nValor " + teclado.getValor()+"\n");
+		        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA + teclado.getNome() +
+		                                       Mensagem.MSG_VALOR + teclado.getValor()+"\n");
 		      
 		    }
 		    
@@ -191,9 +185,9 @@ public class ControlProduto {
 		    i = leitor.nextInt();
 		    if (i > 0 && i <= estoque.getTeclados().size()) {
 		        estoque.getTeclados().remove(i - 1);
-		        System.out.println("Registro removido com sucesso!");
+		        System.out.println(Mensagem.REGISTRO_REMOVIDO);
 		    } else {
-		        System.out.println("ID inválido, por favor tente novamente.");
+		        System.out.println(Mensagem.OPCAO_INVALIDA);
 		    }
 		    i=0;
 		    ControlProduto.listar();
@@ -208,8 +202,8 @@ public class ControlProduto {
 	 
 			    for (Headset headset : estoque.getHeadsets()) {
 			        i++;
-			        System.out.println(i+"-Marca: " + headset.getNome() +
-			                            "\nValor " + headset.getValor()+"\n");
+			        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA + headset.getNome() +
+			                                       Mensagem.MSG_VALOR + headset.getValor()+"\n");
 			    }
 
 			    System.out.println(Mensagem.EXCLUIR_CLIENTE);
@@ -217,9 +211,9 @@ public class ControlProduto {
 			    i = leitor.nextInt();
 			    if (i > 0 && i <= estoque.getHeadsets().size()) {
 			        estoque.getHeadsets().remove(i - 1);
-			        System.out.println("Registro removido com sucesso!");
+			        System.out.println(Mensagem.REGISTRO_REMOVIDO);
 			    } else {
-			        System.out.println("ID inválido, por favor tente novamente.");
+			        System.out.println(Mensagem.OPCAO_INVALIDA);
 			    }
 			    ControlProduto.listar();
 			    leitor.close();
@@ -234,8 +228,8 @@ public class ControlProduto {
 			    for (Mouse mouse : estoque.getMouse()) {
 			        i++;
 			       
-			        System.out.println(i + "-Marca: " + mouse.getNome() +
-			                            "\nValor " + mouse.getValor()+"\n");
+			        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA+ mouse.getNome() +
+			                                        Mensagem.MSG_VALOR + mouse.getValor()+"\n");
 			    }
 
 			    System.out.println(Mensagem.EXCLUIR_CLIENTE);
@@ -243,20 +237,15 @@ public class ControlProduto {
 			    i = leitor.nextInt();
 			    if (i > 0 && i <= estoque.getMouse().size()) {
 			        estoque.getMouse().remove(i - 1);
-			        System.out.println("Registro removido com sucesso!");
+			        System.out.println(Mensagem.REGISTRO_REMOVIDO);
 			    } else {
-			        System.out.println("ID inválido, por favor tente novamente.");
+			        System.out.println(Mensagem.OPCAO_INVALIDA);
 			    }
 			    ControlProduto.listar();
 			    leitor.close();
 			}
 			   break;
-			   
-			   
 		  }
-		  
-		  
-		  
 	}
 	
 	public static void atualizar() {
@@ -265,8 +254,8 @@ public class ControlProduto {
 		  
 		  System.out.println(Mensagem.MSG_ESCOLHA);
 		  System.out.println(Mensagem.MSG_TECLADO+
-				  "\n"+ Mensagem.MSG_HEADSET+ "\n"
-				  + Mensagem.MSG_MOUSE);
+				  	   "\n"+ Mensagem.MSG_HEADSET+ 
+				  	   "\n"+ Mensagem.MSG_MOUSE);
 		  int escolha = leitor.nextInt();  
 		  leitor.nextLine();  
 		  
@@ -275,7 +264,7 @@ public class ControlProduto {
 			  for (int i = 0; i < estoque.getTeclados().size(); i++) {
 			        Teclado teclado = estoque.getTeclados().get(i);
 			        System.out.println((i + 1) + ". " + teclado.getNome() +
-			        		"\n" + teclado.getValor());
+			        		                     "\n" + teclado.getValor());
 			    }
 			    
 			    System.out.println(Mensagem.ATUALIZAR_CLIENTE);
@@ -283,7 +272,7 @@ public class ControlProduto {
 			    leitor.nextLine();
 			    
 			    if (opcao < 1 || opcao > estoque.getTeclados().size()) {
-			        System.out.println("Opção inválida!");
+			        System.out.println(Mensagem.OPCAO_INVALIDA);
 
 			    }
 			    else {
@@ -303,7 +292,7 @@ public class ControlProduto {
 			
 			
 			    
-			    System.out.println("Produto atualizado com sucesso!");
+			    System.out.println(Mensagem.MSG_ATUALIZAR);
 			    
 			    TelaDeProdutos.mostrar();
 			    leitor.close();
@@ -325,7 +314,7 @@ public class ControlProduto {
 			    leitor.nextLine();
 			    
 			    if (opcao < 1 || opcao > estoque.getHeadsets().size()) {
-			        System.out.println("Opção inválida!");
+			        System.out.println(Mensagem.OPCAO_INVALIDA);
 
 			    }
 			    else {
@@ -345,7 +334,7 @@ public class ControlProduto {
 			
 			
 			    
-			    System.out.println("Produto atualizado com sucesso!");
+			    System.out.println(Mensagem.MSG_ATUALIZAR);
 			    
 			    TelaDeProdutos.mostrar();
 			    leitor.close();
@@ -367,7 +356,7 @@ public class ControlProduto {
 			    leitor.nextLine();
 			    
 			    if (opcao < 1 || opcao > estoque.getMouse().size()) {
-			        System.out.println("Opção inválida!");
+			        System.out.println(Mensagem.OPCAO_INVALIDA);
 
 			    }
 			    else {
@@ -387,7 +376,7 @@ public class ControlProduto {
 			
 			
 			    
-			    System.out.println("Produto atualizado com sucesso!");
+			    System.out.println(Mensagem.MSG_ATUALIZAR);
 			    
 			    TelaDeProdutos.mostrar();
 			    leitor.close();
@@ -409,8 +398,8 @@ public class ControlProduto {
 			  
 			  System.out.println(Mensagem.MSG_ESCOLHA);
 			  System.out.println(Mensagem.MSG_TECLADO+
-					  "\n"+ Mensagem.MSG_HEADSET+ "\n"
-					  + Mensagem.MSG_MOUSE);
+					       "\n"+ Mensagem.MSG_HEADSET+ 
+					       "\n"+ Mensagem.MSG_MOUSE);
 			  int escolha = leitor.nextInt();  
 			  leitor.nextLine();  
 			  
@@ -425,8 +414,8 @@ public class ControlProduto {
 			    for (Teclado teclado : estoque.getTeclados()) {
 			        i++;
 			        
-			        System.out.println("\n"+i+"-Marca: " + teclado.getNome() +
-			                            " Valor " + teclado.getValor());
+			        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA + teclado.getNome() +
+			                            		   Mensagem.MSG_VALOR + teclado.getValor());
 			      
 			    }
 			    
@@ -437,11 +426,11 @@ public class ControlProduto {
 			        teclado = estoque.getTeclados().get(i-1).getNome();
 			        valor = estoque.getTeclados().get(i-1).getValor();
 
-				       System.out.println("Produto" + teclado + "Selecionado!");
+				       System.out.println(Mensagem.MSG_PRODUTO_SELECIONADO + teclado);
 				       
 			    }
-			    System.out.println("[1] Adicionar mais produtos");
-				System.out.println("[2] Continuar");
+			    System.out.println(Mensagem.PRODUTO_DESEJA_ADD);
+				System.out.println(Mensagem.PRODUTO_CONTINUAR);
 				int opcao = leitor.nextInt();
 				
 				
@@ -467,8 +456,8 @@ public class ControlProduto {
 		 
 				    for (Headset headset : estoque.getHeadsets()) {
 				        i++;
-				        System.out.println("\n"+i+"-Marca: " + headset.getNome() +
-				                            "Valor " + headset.getValor());
+				        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA + headset.getNome() +
+				                            		   Mensagem.MSG_VALOR + headset.getValor());
 				    }
 
 				    System.out.println(Mensagem.EXCLUIR_CLIENTE);
@@ -479,7 +468,7 @@ public class ControlProduto {
 				        valor = estoque.getHeadsets().get(i-1).getValor();
 
 
-					       System.out.println("Produto" + headset + "Selecionado!");
+					       System.out.println(Mensagem.MSG_PRODUTO_SELECIONADO+ headset);
 				    }
 				    i = 0;
 					      TelaDePedidos.mostrar();
@@ -496,8 +485,8 @@ public class ControlProduto {
 				    for (Mouse mouse : estoque.getMouse()) {
 				        i++;
 				       
-				        System.out.println("\n" + i + "-Marca: " + mouse.getNome() +
-				                            "Valor " + mouse.getValor());
+				        System.out.println("\nID: ["+i+"]\n"+Mensagem.MSG_MARCA + mouse.getNome() +
+				                                   Mensagem.MSG_VALOR + mouse.getValor());
 				    }
 
 				    System.out.println(Mensagem.EXCLUIR_CLIENTE);
@@ -505,9 +494,9 @@ public class ControlProduto {
 				    i = leitor.nextInt();
 				    if (i > 0 && i <= estoque.getMouse().size()) {
 				       mouse =  estoque.getMouse().get(i - 1).getNome();
-				        valor = estoque.getMouse().get(i-1).getValor();
+				       valor = estoque.getMouse().get(i-1).getValor();
 
-				       System.out.println("Produto" + mouse + "Selecionado!");
+				       System.out.println(Mensagem.MSG_PRODUTO_SELECIONADO + mouse);
 				    }
 				    i = 0;
 				      TelaDePedidos.mostrar();

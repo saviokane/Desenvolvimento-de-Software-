@@ -16,26 +16,22 @@ public class TelaDePedidos {
 	
 	System.out.println(Mensagem.TELA_PEDIDOS);
 	System.out.println(Mensagem.MSG_ESCOLHA);
-	System.out.println("[1] Selecionar Cliente");
-	System.out.println("[2] Selecionar Produto");
-	System.out.println("[3] Finalizar Pedido");
-	System.out.println("[4] Voltar");
+	System.out.println("[1] "+Mensagem.MSG_SELECIONAR_CLIENTE);
+	System.out.println("[2] "+Mensagem.MSG_SELECIONAR_PRODUTO);
+	System.out.println("[3] "+Mensagem.MSG_FINALIZAR_PEDIDO);
+	System.out.println("[4] "+Mensagem.MSG_VOLTAR);
 	int escolha = leitor.nextInt();
 	leitor.nextLine();
 
-	
 	switch(escolha) {
 	case 1:
 		ControlCliente.selecionar();
-		// LISTAR NOVO PEDIDO
 		break;
 	case 2:
 		ControlProduto.selecionar();
-		// CADASTRAR NOVO PEDIDO
 		break;
 	case 3:
 		ControlPedido.selecionar();
-		// EXCLUIR PEDIDO
 		break;
 	case 4:
 		TelaPrincipal.mostrar();
