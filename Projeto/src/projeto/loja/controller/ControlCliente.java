@@ -137,7 +137,6 @@ public class ControlCliente {
 	    
 	    if (escolha < 1 || escolha > registro.getPessoa().size()) {
 	        System.out.println(Mensagem.OPCAO_INVALIDA);
-
 	    }
 	    
 	    Pessoa pessoa = registro.getPessoa().get(escolha - 1);
