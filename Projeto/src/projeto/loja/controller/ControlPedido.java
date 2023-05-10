@@ -60,8 +60,8 @@ public class ControlPedido {
 				" Pedido realizado com sucesso!!!"+
 				"\nCliente: "+	pedidos.getPessoa()+
 				"\nProduto: " + pedidos.getProduto()+
-				"\nValor: R$"+ pedidos.getValor()+"\n"+
-				"Valor Total: "+ pedido.getValorTotal());
+				"\nValor: R$"+ pedidos.getValor()+"\n");
+//				"Valor Total: "+ pedido.getValorTotal());
 				
 //		valorTotal = valorTotal + pedidos.getValor();
 		
