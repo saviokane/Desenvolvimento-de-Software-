@@ -107,9 +107,9 @@ public class ControlCliente {
 	        i++;
 	      
 	        System.out.println("\nID: ["+i+"]"+Mensagem.MSG_NOME+ registro.getNome() +
-	        					 Mensagem.MSG_CPF + registro.getCpf() +
-	        					 Mensagem.MSG_TELEFONE + registro.getTelefone()+
-	                             Mensagem.MSG_EMAIL+ registro.getEmail());
+	        					 			   Mensagem.MSG_CPF + registro.getCpf() +
+	        					 			   Mensagem.MSG_TELEFONE + registro.getTelefone()+
+	                             			   Mensagem.MSG_EMAIL+ registro.getEmail());
 	    }
 
 	    System.out.println(Mensagem.EXCLUIR_CLIENTE);

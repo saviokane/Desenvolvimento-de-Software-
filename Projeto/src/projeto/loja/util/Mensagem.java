@@ -65,9 +65,9 @@ public interface Mensagem {
 	final static String EXCLUIR_CLIENTE = "Informe o ID: ";
 	final static String CLIENTE_NULLO = "Ainda não há clientes cadastrados";	
 	final static String ATUALIZAR_CLIENTE = "Informe ID";
-	final static String SELEÇAO_TECLADO = "Selecione teclado ===";
-	final static String SELEÇAO_MOUSE = "Selecione mouse ===";
-	final static String SELEÇAO_HEADSET = "Selecione headset";
+	final static String SELE�CAO_TECLADO = "Selecione teclado ===";
+	final static String SELE�CAO_MOUSE = "Selecione mouse ===";
+	final static String SELE�CAO_HEADSET = "Selecione headset";
 	final static String REGISTRO_REMOVIDO = "Registro removido com sucesso!";
 	final static String OPCAO_INVALIDA = "Opção invalida, por favor tente novamente.";
 	final static String CLIENTE_SELECIONADO = "Cliente selecionado: ";
