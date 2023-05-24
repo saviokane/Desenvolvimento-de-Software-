@@ -1,0 +1,27 @@
+package principal;
+
+import jakarta.persistence.*;
+import principal.modelos.Pessoa;
+
+public class Programa {
+public static void main(String[] args) {
+	
+	// Criação do objeto Pessoa
+	Pessoa p = new Pessoa("Luska","2134");
+	
+	// Configuração do JPA
+	
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("exe_mysql");
+	EntityManager em = emf.createEntityManager();
+	
+	// Gravação da pessoa no banco de dados
+	em.getTransaction().begin();
+	em.persist(p);
+	em.getTransaction().commit();
+	
+	// Encerrando conexão
+	em.close();
+	emf.close();
+	
+}
+}

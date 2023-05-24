@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author Aluno
+ *
+ */
+module ProjetoMeaven {
+	requires jakarta.persistence;
+}
